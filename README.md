@@ -16,9 +16,11 @@
 
 ### - Task_Speed_Read : 가변저항으로부터 값을 받아온 후 Speed 계산
     - RESOURCE = Speed
+    - Speed = analogRead(A3)*200.0/1024.0;
   
 ### - Task_RPM_Cal : Task_Speed_Read 로부터 Speed 값을 받아와 speedToRPM()을 사용하여 rpm 계산
     - RESOURCE = RPM
+	- RPM = speedToRPM(speed);
   
 ### - Task_Battery_Read : Counter 변수 c 와 Speed 를 이용하여 Battery 계산
     - RESOURCE = Battery
