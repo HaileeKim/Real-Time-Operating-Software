@@ -22,6 +22,7 @@
   
 ### - Task_Battery_Read : Counter 변수 c 와 Speed 를 이용하여 Battery 계산
     - RESOURCE = Battery
+    - Battery = Battery - (c * 0.1 + Speed * 0.1);
   
 ### - Task_LCD_Print : 위의 Task 에서 계산한 Speed, RPM, Battery 변수를 LCD에 print
     - RESOURCE = Speed
